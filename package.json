@@ -1,0 +1,29 @@
+{
+  "name": "therapy-backend-v2",
+  "version": "1.0.0",
+  "description": "Online therapy platform API (Express + Sequelize + PostgreSQL)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "db-sync": "node ./src/scripts/db-sync.js",
+    "db-seed": "node ./src/scripts/db-seed.js",
+    "db-reset": "node ./src/scripts/db-reset.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "nodemon": "^3.1.14",
+    "pg": "^8.23.1",
+    "sequelize": "^6.37.8",
+    "swagger-jsdoc": "^6.3.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
