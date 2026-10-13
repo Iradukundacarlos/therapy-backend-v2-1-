@@ -24,7 +24,11 @@ const sequelize = new Sequelize(
         dialect: "postgres",             // The type of database we use
         logging: false,                  // true/console.log = print every SQL query
         dialectOptions: {
-            connectTimeout: 3000         // Give up after 3 seconds
+            connectTimeout: 10000 ,
+            ssl: {
+                require: true,
+                rejectUnauthorized: false  // quick fix, see note below
+            }        // Give up after 3 seconds
         },
         pool: {
             max: 2,        // Maximum connections kept open
